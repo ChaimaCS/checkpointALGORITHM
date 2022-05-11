@@ -1,0 +1,38 @@
+Algorithm three_nb_add
+VAR
+a,i,n, nbrwords,nbrchar, nbrvowels: INTEGER;
+sum : INTEGER:=0;
+CHAINE : String;
+BEGIN
+CHAINE[];
+a:= s.length(CHAINE);
+nbrchar:=0;
+nbrwords:=0;
+nbrvowels:=0;
+
+IF (CHAINE[a]=".") THEN
+    FOR i FROM 1 TO n STEP 1 DO
+
+    IF (CHAINE[i]<>" ") THEN
+    nbrchar:=nbrchar+1;
+    Write ("Your sentence has:",nbrchar," characters");
+    END_IF
+END_FOR
+
+FOR i FROM 1 TO n STEP 1 DO
+    IF (CHAINE[i]=" ") THEN
+    nbrwords:= nbrwords+1;
+    Write ("Your sentence has:",nbrwords," words");
+    END_IF
+END_FOR
+
+FOR i FROM 1 TO n STEP 1 DO
+    IF (CHAINE[i]=""a","e","i","o","u" ") THEN
+    nbrvowels:= nbrvowels+1;
+    Write ("Your sentence has:",nbrvawels," vowels");
+    END_IF
+END_FOR
+    else Write "Your last character must be a point!";
+END_IF
+
+END
