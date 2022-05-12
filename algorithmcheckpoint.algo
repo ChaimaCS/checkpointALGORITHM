@@ -1,16 +1,18 @@
-Algorithm three_nb_add
+Algorithm checkpoint
 VAR
-a,i,n, nbrwords,nbrchar, nbrvowels: INTEGER;
+i,n, nbrwords,nbrchar, nbrvowels: INTEGER;
 sum : INTEGER:=0;
 CHAINE : String;
 BEGIN
 CHAINE[];
-a:= s.length(CHAINE);
 nbrchar:=0;
 nbrwords:=0;
 nbrvowels:=0;
+FOR i FROM 1 TO n STEP 1  DO
+    read (ch[i]);
+END_FOR
 
-IF (CHAINE[a]=".") THEN
+IF (CHAINE[-1]=".") THEN
     FOR i FROM 1 TO n STEP 1 DO
 
     IF (CHAINE[i]<>" ") THEN
