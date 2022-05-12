@@ -2,7 +2,7 @@ Algorithm checkpoint
 VAR
 i,n, nbrwords,nbrchar, nbrvowels: INTEGER;
 sum : INTEGER:=0;
-CHAINE : String;
+CHAINE : ARRAY_OF string [n];
 BEGIN
 CHAINE[];
 nbrchar:=0;
