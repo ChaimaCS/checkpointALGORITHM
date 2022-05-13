@@ -1,40 +1,29 @@
 Algorithm checkpoint
 VAR
-i,n, nbrwords,nbrchar, nbrvowels: INTEGER;
-sum : INTEGER:=0;
-CHAINE : ARRAY_OF string [n];
+i, nbrwords,nbrchar, nbrvowels: INTEGER;
+CHAINE : String;
 BEGIN
-CHAINE[];
 nbrchar:=0;
 nbrwords:=0;
 nbrvowels:=0;
-FOR i FROM 1 TO n STEP 1  DO
-    read (ch[i]);
-END_FOR
 
-IF (CHAINE[-1]=".") THEN
-    FOR i FROM 1 TO n STEP 1 DO
+
+REPEAT
+    read (CHAINE[i]);
 
     IF (CHAINE[i]<>" ") THEN
     nbrchar:=nbrchar+1;
     Write ("Your sentence has:",nbrchar," characters");
     END_IF
-END_FOR
 
-FOR i FROM 1 TO n STEP 1 DO
     IF (CHAINE[i]=" ") THEN
     nbrwords:= nbrwords+1;
     Write ("Your sentence has:",nbrwords," words");
     END_IF
-END_FOR
 
-FOR i FROM 1 TO n STEP 1 DO
     IF (CHAINE[i]=""a","e","i","o","u" ") THEN
     nbrvowels:= nbrvowels+1;
     Write ("Your sentence has:",nbrvawels," vowels");
     END_IF
-END_FOR
-    else Write "Your last character must be a point!";
-END_IF
-
+UNTIL (CHAINE[i]<>".")
 END
